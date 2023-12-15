@@ -1,12 +1,6 @@
-﻿#include <windows.h>
-#include <algorithm>
-#include <iostream>
-#include <sstream>
+﻿#include <iostream>
 #include <cstdlib>
-#include <vector>
-#include <string>
-#include <bitset>
-#include <set>
+#include <Windows.h>
 
 const int y = 25;
 const int x = 120;
@@ -19,7 +13,7 @@ const int quantity = x / y;
 std::string map[y][x] = { {} };
 
 struct Elements {
-    std::string empty = " ";
+    std::string empty = ".";
     std::string terra = "#";
     std::string preterra = "~";
     std::string reset = "`";
