@@ -1,19 +1,25 @@
 ﻿#include <windows.h>
+#include <algorithm>
 #include <iostream>
+#include <sstream>
 #include <cstdlib>
+#include <vector>
+#include <string>
+#include <bitset>
+#include <set>
 
-const int y = 20;
-const int x = 100;
+const int y = 25;
+const int x = 120;
 
-const int Const_thicknessX = 7+10;
-const int Const_thicknessY = 4+6;
+const int Const_thicknessY = 25;
+const int Const_thicknessX = 50;
 
 const int quantity = x / y;
 
 std::string map[y][x] = { {} };
 
 struct Elements {
-    std::string empty = ".";
+    std::string empty = " ";
     std::string terra = "#";
     std::string preterra = "~";
     std::string reset = "`";
@@ -77,12 +83,8 @@ void Print() {
 int reset() {
     for (int i = 0; i < y; i++) {
         for (int k = 0; k < x; k++) {
-            if (i + 1 != y) {
-                map[i + 1][k] = e.terra;
-            }
             map[i][k] = e.reset;
         }
-        Print();
     }
     GenField();
     GenTerra();
