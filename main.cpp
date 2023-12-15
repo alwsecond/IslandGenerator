@@ -1,12 +1,6 @@
 ﻿#include <windows.h>
-#include <algorithm>
 #include <iostream>
-#include <sstream>
 #include <cstdlib>
-#include <vector>
-#include <string>
-#include <bitset>
-#include <set>
 
 const int y = 20;
 const int x = 100;
