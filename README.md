@@ -1,4 +1,4 @@
-_Hi, just a IslandGenerator (TerraGenerator);_
+_Just a IslandGenerator (TerraGenerator);_
 _I dont know why you need this generator, but its really fun :) for me;_
 
   # 'R' - RESET little world; #
