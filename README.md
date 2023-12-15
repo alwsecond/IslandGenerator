@@ -1,6 +1,5 @@
-HELLO, just a IslandGenerator (TerraGenerator);
-I dont know why you need this generator, but its really fun :) for me; 
-KEYS: {
+_Hi, just a IslandGenerator (TerraGenerator);_
+_I dont know why you need this generator, but its really fun :) for me;_
+
   # 'R' - RESET little world; #
   // You can change size of world if you want
-}
