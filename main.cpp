@@ -1,12 +1,18 @@
-﻿#include <iostream>
+﻿#include <windows.h>
+#include <algorithm>
+#include <iostream>
+#include <sstream>
 #include <cstdlib>
-#include <Windows.h>
+#include <vector>
+#include <string>
+#include <bitset>
+#include <set>
 
 const int y = 25;
 const int x = 120;
 
-const int Const_thicknessY = 25;
-const int Const_thicknessX = 50;
+const int Const_thicknessY = 10;
+const int Const_thicknessX = 20;
 
 const int quantity = x / y;
 
@@ -75,11 +81,6 @@ void Print() {
 }
 
 int reset() {
-    for (int i = 0; i < y; i++) {
-        for (int k = 0; k < x; k++) {
-            map[i][k] = e.reset;
-        }
-    }
     GenField();
     GenTerra();
     Print();
