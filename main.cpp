@@ -1,12 +1,7 @@
 ﻿#include <windows.h>
-#include <algorithm>
 #include <iostream>
-#include <sstream>
 #include <cstdlib>
-#include <vector>
-#include <string>
-#include <bitset>
-#include <set>
+
 
 const int y = 25;
 const int x = 120;
@@ -88,9 +83,7 @@ int reset() {
 }
 
 int main() {
-    GenField();
-    GenTerra();
-    Print();
+    reset();
     for ( ; ; )
         if (GetAsyncKeyState('R') & 0x001) reset();
 
